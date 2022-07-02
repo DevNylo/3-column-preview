@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+@media only screen and (max-width: 480px) {
+    div.sedan{
+        flex: 1 1 300px;
+        margin-top: 50px;
+    }
+    div.suv{
+        flex: 1 1 300px;;
+    }
+    div.luxury{
+        flex: 1 1 300px;
+        margin-bottom:50px;
+    }
+}
+
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+    
+}
+
+img{
+    margin: 30px;
+}
+
+p{
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 30px;
+}
+
+h1{ 
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    margin-left: 30px;
+    color: white;
+}
+
+.btn-link{
+    margin-top: 70px;
+}
+
+.btn-link > p > a{
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lexend Deca' , sans-serif;
+
+}
+
+section.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 100%, 0.75);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.sedan{
+    width: 250px;
+    height: 400px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+div.suv{
+    width: 250px;
+    height: 400px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+div.luxury{
+    width: 250px;
+    height: 400px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+#hovsed a:hover{
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+}
+
+#hovsuv a:hover{
+    background-color:white;
+    color: hsl(184, 100%, 22%);
+}
+
+#hovlux a:hover{
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+
+}
